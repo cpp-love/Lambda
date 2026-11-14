@@ -1,0 +1,43 @@
+BasedOnStyle: LLVM
+Language: Cpp
+Standard: Latest
+
+IndentWidth: 4 # 缩进宽度为 4 个空格
+UseTab: Never # 禁止使用 Tab，强制用空格缩进
+TabWidth: 4 # Tab 宽度（与空格对齐，若 UseTab 为 Never 则此选项仅作参考）
+
+NamespaceIndentation: All # 控制命名空间缩进(None/Inner/All)
+
+ColumnLimit: 105 # 列数量限制
+
+BreakBeforeBraces: Attach # 大括号与声明同行，不换行
+
+BreakBeforeBinaryOperators: NonAssignment # 运算符换行到下一行行首
+BinPackParameters: BinPack # 参数紧凑成行
+AllowAllArgumentsOnNextLine: false # 不允许所有参数在下一行
+AllowAllParametersOfDeclarationOnNextLine: false # 不允许所有声明参数在下一行
+
+AlwaysBreakTemplateDeclarations: Yes # 模板声明换行
+AlignAfterOpenBracket: Align # 对齐模板参数
+
+AllowShortEnumsOnASingleLine: false # 不允许短枚举在只一行内定义
+AllowShortBlocksOnASingleLine: Empty # 不允许短块在只一行内定义
+AllowShortCaseLabelsOnASingleLine: true # 允许短 case 标签在只一行内定义
+AllowShortFunctionsOnASingleLine: All # 允许短函数在只一行内定义
+AllowShortLambdasOnASingleLine: All # 允许短 lambda 函数在只一行内定义
+AllowShortLoopsOnASingleLine: false # 不允许短循环在只一行内定义
+AllowShortIfStatementsOnASingleLine: Never # 不允许短 if 语句在只一行内定义
+
+CommentPragmas: '^\\\\(brief|param|return|file)' # 匹配 Doxygen 标签
+ReflowComments: Never # 禁止重新换行注释
+
+IndentCaseLabels: true # switch 语句中 case 的缩进
+
+FixNamespaceComments: true # 自动修复命名空间注释
+ShortNamespaceLines: 0 # 短命名空间单行显示
+SortIncludes: { Enabled: true } # 头文件排序方式
+
+SpacesBeforeTrailingComments: 1 # 行尾注释前的空格数
+AlignTrailingComments: true # 对齐行尾注释
+AlignConsecutiveMacros: AcrossEmptyLinesAndComments # 对齐连续宏
+AlignConsecutiveDeclarations: AcrossEmptyLinesAndComments # 对齐连续声明

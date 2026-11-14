@@ -1,0 +1,52 @@
+# 默认：自动检测文本并规范为 LF 入库
+* text=auto
+
+# C/C++ 源文件：强制 LF
+*.c   text eol=lf
+*.cc  text eol=lf
+*.cpp text eol=lf
+*.cxx text eol=lf
+*.h   text eol=lf
+*.hh  text eol=lf
+*.hpp text eol=lf
+*.hxx text eol=lf
+*.inl text eol=lf
+*.ipp text eol=lf
+
+# 构建与脚本文件：强制 LF
+CMakeLists.txt text eol=lf
+*.cmake        text eol=lf
+Makefile       text eol=lf
+*.make         text eol=lf
+*.sh           text eol=lf
+*.bash         text eol=lf
+
+# Visual Studio 相关：项目文件必须 CRLF，其他 LF
+*.sln          text eol=crlf
+*.vcxproj      text eol=lf
+*.filters      text eol=lf
+*.props        text eol=lf
+*.targets      text eol=lf
+
+# 编译生成的二进制文件 / 库文件：不转换
+*.exe          binary
+*.dll          binary
+*.lib          binary
+*.a            binary
+*.so           binary
+*.dylib        binary
+*.o            binary
+*.obj          binary
+*.out          binary
+*.pdb          binary
+
+# 资源文件与压缩包：不转换
+*.png          binary
+*.jpg          binary
+*.jpeg         binary
+*.bmp          binary
+*.ico          binary
+*.zip          binary
+*.tar          binary
+*.gz           binary
+*.7z           binary
